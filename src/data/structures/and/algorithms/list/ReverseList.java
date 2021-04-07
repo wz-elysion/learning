@@ -3,11 +3,11 @@ package data.structures.and.algorithms.list;
 public class ReverseList {
 
     static class Node<T> {
-        T current;
+        T item;
         Node<T> next;
 
-        public Node(T current, Node<T> next) {
-            this.current = current;
+        public Node(T item, Node<T> next) {
+            this.item = item;
             this.next = next;
         }
     }
@@ -21,7 +21,7 @@ public class ReverseList {
 
         Node<Integer> newNode = reverse(head);
         while (newNode != null) {
-            System.out.println(newNode.current);
+            System.out.println(newNode.item);
             newNode = newNode.next;
         }
     }
@@ -32,7 +32,7 @@ public class ReverseList {
             if (node == null) {
                 break;
             }
-            target = new Node<>(node.current, target);
+            target = new Node<>(node.item, target);
             node = node.next;
         }
         return target;
