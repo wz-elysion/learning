@@ -1,4 +1,4 @@
-package data.structures.and.algorithms.list;
+package wz_ling.learning.data.structures.and.algorithms.list;
 
 public class ReverseList {
 
