@@ -41,9 +41,11 @@ public class SinglyLinkedList<T> {
             return null;
         }
         SinglyLinkedList<T> target = new SinglyLinkedList<T>(null);
-        SinglyLinkedList<T> tail = target;
+        SinglyLinkedList<T> tail = target;//队尾指向第一个元素
         for (T t : tList) {
+            //把新的元素加到队尾
             tail.next = new SinglyLinkedList<T>(t);
+            //将队尾指向新加入的元素
             tail = tail.next;
         }
         return target.next;

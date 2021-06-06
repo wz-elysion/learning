@@ -1,5 +1,8 @@
 package wz_ling.learning.data.structures.and.algorithms.list;
 
+/**
+ * 链表反转
+ */
 public class ReverseList {
 
     public static void main(String[] args) {

@@ -1,6 +1,5 @@
 package wz_ling.learning.data.structures.and.algorithms.list;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +7,9 @@ import java.util.List;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
-
+/**
+ * 升序链表合并
+ */
 public class MergeList {
 
 
@@ -70,9 +71,7 @@ public class MergeList {
         }
         SinglyLinkedList<Integer> target = new SinglyLinkedList<>(null);
 
-        SinglyLinkedList<Integer> tail = target;
-        SinglyLinkedList<Integer> a = list1;
-        SinglyLinkedList<Integer> b = list2;
+        SinglyLinkedList<Integer> tail = target, a = list1, b = list2;
         while (nonNull(a) && nonNull(b)) {
             if (a.value < b.value) {
                 target.next = a;
