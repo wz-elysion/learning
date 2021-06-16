@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>wz_ling</groupId>
-	<artifactId>learning</artifactId>
+	<artifactId>learning-basics</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>web_demon</name>
 	<description>Demo project for Spring Boot</description>
