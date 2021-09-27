@@ -5,6 +5,7 @@ public class RealObject implements SayDemo, PlayDemo {
 
     @Override
     public String sayGoodBye() {
+        System.out.println("goodbye RealObject");
         return "goodbye RealObject";
     }
 
